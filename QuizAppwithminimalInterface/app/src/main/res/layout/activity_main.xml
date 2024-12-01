@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Question 1 (Single Choice - Radio Buttons) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. What is the capital of France?"
+            android:textSize="18sp"
+            android:paddingTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berlin"/>
+
+            <RadioButton
+                android:id="@+id/radioOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paris"/>
+
+            <RadioButton
+                android:id="@+id/radioOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rome"/>
+        </RadioGroup>
+
+        <!-- Question 2 (Multiple Choice - CheckBoxes) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Which of these are programming languages?"
+            android:textSize="18sp"
+            android:paddingTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxQ2Option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxQ2Option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTML"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxQ2Option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxQ2Option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQL"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
